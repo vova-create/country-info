@@ -1,0 +1,44 @@
+.country-card
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px
+  width: 300px
+  height: 150px
+  border-radius: 15px
+  background: linear-gradient(135deg, #4c87e7 0%, #6fb1fc 100%)
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+  color: #fff
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+  cursor: pointer
+  @include mediaMobileOnly
+    height: auto
+    padding: 15px
+
+.country-card:hover
+  transform: translateY(-5px)
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3)
+
+.country-card__name
+  font-size: 24px
+  font-weight: bold
+  margin-bottom: 10px
+  text-align: center
+  @include mediaMobileOnly
+    font-size: 20px
+
+
+
+
+.country-card__details
+  text-align: center
+
+.country-card__description
+  font-size: 16px
+  line-height: 1.4
+  @include mediaMobileOnly
+    font-size: 14px
+
+
+
