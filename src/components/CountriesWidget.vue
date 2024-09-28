@@ -28,11 +28,8 @@ export default {
       singleWidget3Code: null,
       singleWidget3Name: null,
       singleWidget3Date: null,
-
-
     }
   },
-
   components:{
     WidgetItem
   },

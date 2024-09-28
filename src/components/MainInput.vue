@@ -17,8 +17,6 @@ export default {
     }
 
   },
-  components: {
-  },
 
   async mounted() {
       this.filteredCountries()
@@ -40,7 +38,6 @@ export default {
 
     }
   },
-
 
   computed: {
     ...mapGetters(['getAllCountries']),

@@ -20,33 +20,21 @@ import MainInput from "@/components/MainInput";
 import CountryCard from "@/components/CountryCard";
 import CountriesWidget from "@/components/CountriesWidget";
 
-
 export default {
   name: 'HomePage',
-  data(){
-    return {
-      empty:true
-    }
-
-  },
-  props: {
-    msg: String
-  },
   components: {
     MainInput,
     CountryCard,
     CountriesWidget
-
   },
+
   async mounted() {
     await this.getCountries()
-    console.log(this.filteredCountries)
-
   },
+
   methods: {
     ...mapActions(['getCountries'])
   },
-
 
   computed: {
     ...mapGetters(['getAllCountries','getFilteredCountries']),

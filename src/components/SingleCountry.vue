@@ -27,7 +27,6 @@ export default {
 
   },
 
-
  async mounted() {
    this.singleCountry = await this.getSingleCountry(this.$route.params.id)
 },
